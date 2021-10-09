@@ -27,12 +27,18 @@
     ]
   },
   "projects": {
+    "components": {
+      "tags": []
+    },
     "webapp": {
       "tags": []
     },
     "webapp-e2e": {
       "tags": [],
       "implicitDependencies": ["webapp"]
+    },
+    "webcomponents-authentication": {
+      "tags": []
     }
   }
 }

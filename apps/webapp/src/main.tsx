@@ -1,11 +1,14 @@
-import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom';
-
-import App from './app/app';
+import Routes from './routes';
+import { StrictMode } from 'react';
+import { ThemeProvider } from '@material-ui/core';
+import { defaultTheme } from './theme/defaultTheme';
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <ThemeProvider theme={defaultTheme}>
+      <Routes />
+    </ThemeProvider>
   </StrictMode>,
   document.getElementById('root')
 );

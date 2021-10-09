@@ -1,6 +1,28 @@
 {
   "version": 2,
   "projects": {
+    "components": {
+      "root": "libs/components",
+      "sourceRoot": "libs/components/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/components/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/components"],
+          "options": {
+            "jestConfig": "libs/components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "webapp": {
       "root": "apps/webapp",
       "sourceRoot": "apps/webapp/src",
@@ -99,6 +121,30 @@
           "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["apps/webapp-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "webcomponents-authentication": {
+      "root": "libs/webcomponents/authentication",
+      "sourceRoot": "libs/webcomponents/authentication/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/webcomponents/authentication/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/webcomponents/authentication"],
+          "options": {
+            "jestConfig": "libs/webcomponents/authentication/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
