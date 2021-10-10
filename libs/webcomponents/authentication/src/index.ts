@@ -1,1 +1,1 @@
-export * from './lib/authentication';
+export { Login } from './pages/';

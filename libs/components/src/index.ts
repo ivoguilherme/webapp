@@ -1,1 +1,1 @@
-export { ButtonWeb } from './lib';
+export { ButtonWeb, BoxWeb, TextFieldWeb, TypographyWeb } from './lib';

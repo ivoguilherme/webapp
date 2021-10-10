@@ -1,11 +1,5 @@
 import { Button as ButtonMui } from '@material-ui/core';
-
-export type ButtonWebProps = {
-  id?: string;
-  testId?: string;
-  onClick?(): void;
-  children: React.ReactNode;
-};
+import { ButtonWebProps } from '../../types';
 
 export function ButtonWeb({ testId, ...props }: ButtonWebProps) {
   return (

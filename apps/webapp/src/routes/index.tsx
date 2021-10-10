@@ -1,6 +1,5 @@
-import { Authentication } from '@authentication';
+import { Login } from '@authentication';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import App from '../app/app';
 
 export type RouterProps = {
   exact?: boolean;
@@ -12,12 +11,7 @@ const routes: RouterProps[] = [
   {
     exact: true,
     path: '/',
-    component: App,
-  },
-  {
-    exact: true,
-    path: '/login',
-    component: Authentication,
+    component: Login,
   },
 ];
 
