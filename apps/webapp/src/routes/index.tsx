@@ -20,7 +20,7 @@ export default function Routes() {
     <Router>
       <Switch>
         {routes.map((props) => (
-          <Route {...props} />
+          <Route key={props.path} {...props} />
         ))}
       </Switch>
     </Router>

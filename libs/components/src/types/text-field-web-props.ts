@@ -7,4 +7,7 @@ export type TextFieldWebProps = {
   type?: React.InputHTMLAttributes<unknown>['type'];
   InputProps?: any;
   inputProps?: any;
+  autoComplete?: string;
+  error?: boolean;
+  helperText?: React.ReactNode;
 };

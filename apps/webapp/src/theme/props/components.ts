@@ -6,11 +6,6 @@ export const components: Components = {
       variant: 'contained',
     },
   },
-  MuiTextField: {
-    defaultProps: {
-      variant: 'standard',
-    },
-  },
   MuiInputBase: {
     styleOverrides: {
       input: {

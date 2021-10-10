@@ -10,6 +10,9 @@ export function TextFieldWeb({
   type = 'text',
   InputProps,
   inputProps,
+  autoComplete,
+  error,
+  helperText,
 }: TextFieldWebProps) {
   return (
     <TextField
@@ -19,6 +22,9 @@ export function TextFieldWeb({
       onBlur={onBlur}
       label={label}
       type={type}
+      error={error}
+      autoComplete={autoComplete}
+      helperText={helperText}
       inputProps={{
         'data-testid': testId,
         ...inputProps,

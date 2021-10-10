@@ -1,1 +1,7 @@
-export { ButtonWeb, BoxWeb, TextFieldWeb, TypographyWeb } from './lib';
+export {
+  ButtonWeb,
+  BoxWeb,
+  TextFieldWeb,
+  TypographyWeb,
+  FormError,
+} from './lib';
