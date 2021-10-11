@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@authentication": ["libs/webcomponents/authentication/src/index.ts"],
-      "@components": ["libs/components/src/index.ts"],
+      "@authentication": ["libs/webcomponents/authentication/index.ts"],
       "@webcomponents": ["libs/webcomponents/index.ts"]
     }
   },

@@ -1,7 +1,22 @@
-# webcomponents-authentication
+# Authentication
 
-This library was generated with [Nx](https://nx.dev).
+> Em desenvolvimento
+> <br>
 
-## Running unit tests
+Webcomponent responsável pela autenticação, registro e recuperação de informações do usuário
+<br>
 
-Run `nx test webcomponents-authentication` to execute the unit tests via [Jest](https://jestjs.io).
+## Estrutura do Projeto
+
+```bash
+|
+|___ src
+|   |
+|   |___ components
+|   |
+|   |___ pages
+|   |
+|   |___ providers
+|   |
+|   |___ theme
+```

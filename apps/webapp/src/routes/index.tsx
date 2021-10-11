@@ -1,4 +1,4 @@
-import { Login } from '@authentication';
+import { Authentication } from '@webcomponents';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export type RouterProps = {
@@ -11,7 +11,7 @@ const routes: RouterProps[] = [
   {
     exact: true,
     path: '/',
-    component: Login,
+    component: Authentication,
   },
 ];
 

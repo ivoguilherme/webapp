@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { BoxWeb, TextFieldWeb, ButtonWeb } from '@components';
+import { Box, TextField, Button } from '@material-ui/core';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -25,37 +25,37 @@ export const LoginForm = ({ onSubmit }: { onSubmit(data: any): void }) => {
 
   return (
     <form data-testid="loginForm" onSubmit={handleSubmit(onSubmit)}>
-      <BoxWeb mb={{ xs: 1, sm: 3 }}>
-        <TextFieldWeb
-          testId="loginField_loginForm"
+      <Box mb={{ xs: 1, sm: 3 }}>
+        <TextField
           label="Login"
           error={Boolean(errors.email)}
           helperText={errors.email && errors.email?.message}
           inputProps={{
+            'data-testid': 'loginField_loginForm',
             ...register('email', { required: true }),
           }}
         />
-      </BoxWeb>
+      </Box>
 
-      <BoxWeb mb={{ xs: 1, sm: 6 }}>
-        <TextFieldWeb
-          testId="passwordField_loginForm"
+      <Box mb={{ xs: 1, sm: 6 }}>
+        <TextField
           label="Password"
           type="password"
           error={Boolean(errors.password)}
           helperText={errors.password && errors.password?.message}
           autoComplete="current-password"
           inputProps={{
+            'data-testid': 'passwordField_loginForm',
             ...register('password', { required: true }),
           }}
         />
-      </BoxWeb>
+      </Box>
 
-      <BoxWeb display="flex" justifyContent="flex-end">
-        <ButtonWeb testId="submitButton_loginForm" type="submit">
+      <Box display="flex" justifyContent="flex-end">
+        <Button data-testid="submitButton_loginForm" type="submit">
           Acessar
-        </ButtonWeb>
-      </BoxWeb>
+        </Button>
+      </Box>
     </form>
   );
 };

@@ -1,1 +1,1 @@
-export * from './authentication/src';
+export { Authentication } from './authentication';

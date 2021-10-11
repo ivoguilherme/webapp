@@ -27,9 +27,6 @@
     ]
   },
   "projects": {
-    "components": {
-      "tags": []
-    },
     "webapp": {
       "tags": []
     },
