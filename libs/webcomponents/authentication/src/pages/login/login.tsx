@@ -1,5 +1,4 @@
-import { BoxWeb } from '@components';
-import { useForm } from 'react-hook-form';
+import { BoxWeb, TypographyWeb } from '@components';
 import { LoginForm } from './login-form';
 
 export function Login() {
@@ -15,7 +14,14 @@ export function Login() {
       justifyContent="center"
       alignItems="center"
     >
-      <LoginForm onSubmit={handleFormSubmit} />
+      <BoxWeb width="500px" padding="15px">
+        <BoxWeb width="100%" textAlign="center" mb={{ xs: 2, sm: 6 }}>
+          <TypographyWeb variant="h1" fontWeight="500">
+            Acesse ou crie uma nova conta
+          </TypographyWeb>
+        </BoxWeb>
+        <LoginForm onSubmit={handleFormSubmit} />
+      </BoxWeb>
     </BoxWeb>
   );
 }
