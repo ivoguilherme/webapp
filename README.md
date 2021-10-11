@@ -1,37 +1,70 @@
+
 # WebApp NX
 
-## Links
-- [Considerações iniciais](#considerações-iniciais)
+Este projeto é baseado em um monorepo utilizando NX e tem por objetivo ser capaz de orquestrar várias aplicações diferentes coexistindo no mesmo ambiente de forma individual.<br><br>
+A aplicação principal é chamada de WebApp e todas as demais são web componentes individuais e desacoplados, capazes de terem suas próprias arquiteturas, componentes visuais independentes e que devem funcionar perfeitamente, independente de serem chamadas por WebApp ou qualquer outra aplicação.
+<br>
+
+## Navegação
 - [Configurações do Projeto](#configurações-do-projeto)
-- [Implementações](#implementações)
-- [Débitos técnicos](#débitos-técnicos)
-  - [Genéricos](#genéricos)
-  - [Componentes](#componentes)
-
-## Considerações iniciais
-
-1. Faça a instalação do **nx** globalmente utilizando `npm install -g nx`
-2. Instale a extensão `Nx Console` e, se possível, todas as demais extensões sugeridas pelo projeto. (Jest Runner, Prettier, etc.)
-
-[Documentação NX](https://nx.dev/l/r/getting-started/intro)
+  - [Instalação](#instalação)
+  - [Configurações Opcionais](#configurações-opcionais)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+<br>
 
 ## Configurações do Projeto
+#### Instalação
+```bash
+# Clone o projeto
+$ git clone https://github.com/ivoguilherme/webapp.git
 
-1. Clone o projeto
-2. Execute `npm install` para instalar todas as dependências necessárias
-3. Execute o comando `npm run start` para iniciar a aplicação no seguinte endereço: http://localhost:4200
-4. Para rodar os testes utilize `nx test <projectName> [options]` ou `nx run <project>:test [options]`
+# Instale todas as dependências necessárias
+$ npm install
 
-## Implementações
-- [ ] Implementar SOLID
-- [ ] Criar site Institucional *(VueJS)*
-- [ ] Criar Dashboard *(React)*
-- [ ] Criar Blog *(NextJs)*
-
-## Débitos técnicos 
-
-### Genéricos
-- [ ] Abstrair biblioteca de componentes
+# Inicie o projeto
+$ npm run start
+```
+<br>
  
-### Componentes
- - [ ] Abstrair componente de Formulário
+#### Configurações Opcionais
+```bash
+# Instale o NX globalmente
+$ npm install -g nx
+
+# Faça a instalação de todas as extensões sugeridas pelo projeto
+# NX Console, Jest Runner, Prettier
+```
+<br>
+
+## Estrutura do Projeto
+
+```bash
+# Estrutura de pastas do Projeto
+
+|   # Diretório principal
+|___ apps				
+|   |
+|   |   # Aplicação principal
+|   |___ webapp
+|   |
+|   |   # Testes e2e
+|   |___ webapp-e2e			
+|
+|   # Diretório de Webcomponents e código compartilhado
+|___ libs	
+|   |
+|   |   # Componentes genéricos
+|   |___ components		
+|   |
+|   |   # Webcomponentes (Aplicações independentes)
+|   |___ webcomponents		
+|       |
+|       |   # Aplicação de authenticação
+|       |___ authentication
+|
+|   # Ferramentas
+|___ tools
+|   |
+|   |   # Geradores
+|   |___ generators
+```
