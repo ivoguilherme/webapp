@@ -10,6 +10,7 @@ A aplicação principal é chamada de WebApp e todas as demais são web componen
   - [Instalação](#instalação)
   - [Configurações Opcionais](#configurações-opcionais)
 - [Estrutura do Projeto](#estrutura-do-projeto)
+- [Layouts](#layouts)
 <br>
 
 ## Configurações do Projeto
@@ -68,3 +69,8 @@ $ npm install -g nx
 |   |   # Geradores
 |   |___ generators
 ```
+<br>
+
+## Layouts
+
+- [Authentication](https://www.figma.com/file/nd092vosfi7OxiOJYjZesO/Registration-Onboarding-Design-Community?node-id=1%3A677)
