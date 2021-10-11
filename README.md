@@ -1,17 +1,17 @@
 # WebApp NX
 
 ## Links
-[Considerações iniciais](#considerações-iniciais)
-[Configurações do Projeto](#configurações-do-projeto)
-[Implementações](#implementações)
-[Débitos técnicos](#débitos-técnicos)
- -- [Genéricos](#genéricos)
- -- [Componentes](#componentes)
+- [Considerações iniciais](#considerações-iniciais)
+- [Configurações do Projeto](#configurações-do-projeto)
+- [Implementações](#implementações)
+- [Débitos técnicos](#débitos-técnicos)
+  - [Genéricos](#genéricos)
+  - [Componentes](#componentes)
 
 ## Considerações iniciais
 
-- Faça a instalação do **nx** globalmente utilizando `npm install -g nx`
-- Instale a extensão `Nx Console` e, se possível, todas as demais extensões sugeridas pelo projeto. (Jest Runner, Prettier, etc.)
+1. Faça a instalação do **nx** globalmente utilizando `npm install -g nx`
+2. Instale a extensão `Nx Console` e, se possível, todas as demais extensões sugeridas pelo projeto. (Jest Runner, Prettier, etc.)
 
 [Documentação NX](https://nx.dev/l/r/getting-started/intro)
 
